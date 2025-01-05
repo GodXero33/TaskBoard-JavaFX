@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="769.0" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="godxero.control.HistoryFormController">
+   <children>
+      <TableView fx:id="tasksListTable" prefHeight="400.0" prefWidth="768.0">
+        <columns>
+            <TableColumn fx:id="titleColumn" minWidth="0.0" prefWidth="144.0" text="Title" />
+            <TableColumn fx:id="startTimeColumn" minWidth="0.0" prefWidth="208.0" text="Start Time" />
+            <TableColumn fx:id="endTimeColumn" minWidth="0.0" prefWidth="208.0" text="End Time" />
+            <TableColumn fx:id="editedTimeColumn" minWidth="0.0" prefWidth="208.0" text="Edited Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

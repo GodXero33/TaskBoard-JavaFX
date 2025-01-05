@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="712.0" prefWidth="478.0" styleClass="root" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="godxero.control.MainFormController">
+   <children>
+      <Pane prefHeight="122.0" prefWidth="478.0">
+         <children>
+            <Label fx:id="userNameLabel" alignment="CENTER" layoutY="23.0" prefHeight="40.0" prefWidth="478.0">
+               <styleClass>
+                  <String fx:value="label-h" />
+                  <String fx:value="label-h1" />
+               </styleClass>
+            </Label>
+            <Label fx:id="userFullNameLabel" alignment="CENTER" layoutY="72.0" prefHeight="39.0" prefWidth="478.0">
+               <styleClass>
+                  <String fx:value="label-h" />
+                  <String fx:value="label-h2" />
+               </styleClass>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="25.0" layoutY="133.0" prefHeight="478.0" prefWidth="429.0">
+         <children>
+            <Label prefHeight="39.0" prefWidth="429.0" text="ToDo" textFill="WHITE">
+               <styleClass>
+                  <String fx:value="label-h" />
+                  <String fx:value="label-white" />
+               </styleClass>
+            </Label>
+            <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutY="39.0" prefHeight="441.0" prefWidth="429.0" styleClass="root">
+              <content>
+                <AnchorPane fx:id="scrollContent" minHeight="0.0" minWidth="0.0" prefHeight="442.0" prefWidth="432.0" styleClass="root" />
+              </content>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </ScrollPane>
+         </children>
+      </Pane>
+      <Button fx:id="taskEditButton" disable="true" ellipsisString="" layoutX="104.0" layoutY="651.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#taskEditButtonOnAction" prefHeight="49.0" prefWidth="49.0" styleClass="button-list">
+         <tooltip>
+            <Tooltip text="edit" />
+         </tooltip>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView disable="true" fitHeight="39.0" fitWidth="38.0" layoutX="110.0" layoutY="657.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/edit.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="taskDeleteButton" disable="true" ellipsisString="" layoutX="163.0" layoutY="651.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#taskDeleteButtonOnAction" prefHeight="49.0" prefWidth="49.0" styleClass="button-list">
+         <tooltip>
+            <Tooltip text="delete" />
+         </tooltip>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView disable="true" fitHeight="33.0" fitWidth="30.0" layoutX="173.0" layoutY="661.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/bin.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="taskDoneButton" disable="true" ellipsisString="" layoutX="221.0" layoutY="652.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#taskDoneButtonOnAction" prefHeight="49.0" prefWidth="49.0" styleClass="button-list">
+         <tooltip>
+            <Tooltip text="done" />
+         </tooltip>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView disable="true" fitHeight="39.0" fitWidth="30.0" layoutX="231.0" layoutY="662.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/done.png" />
+         </image>
+      </ImageView>
+      <Button ellipsisString="" layoutX="278.0" layoutY="651.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#taskHistoryButtonOnAction" prefHeight="49.0" prefWidth="49.0" styleClass="button-list">
+         <tooltip>
+            <Tooltip text="history" />
+         </tooltip>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView disable="true" fitHeight="39.0" fitWidth="30.0" layoutX="288.0" layoutY="661.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/history.png" />
+         </image>
+      </ImageView>
+      <Button ellipsisString="" layoutX="335.0" layoutY="651.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#taskAddButtonOnAction" prefHeight="49.0" prefWidth="49.0" styleClass="button-list">
+         <tooltip>
+            <Tooltip text="add task" />
+         </tooltip>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView disable="true" fitHeight="39.0" fitWidth="30.0" layoutX="345.0" layoutY="661.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/add.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

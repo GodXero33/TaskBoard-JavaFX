@@ -1,0 +1,226 @@
+/* General Styling */
+.root {
+    -fx-background-color: #1b1f29; /* Dark blue background */
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* Labels */
+.label {
+    -fx-text-fill: #f4a261; /* Orange text */
+    -fx-font-size: 50px;
+    -fx-font-family: 'Agency FB';
+    -fx-font-weight: bold;
+}
+
+.label-normal {
+    -fx-text-fill: #f4a261; /* Orange text */
+    -fx-font-size: 24px;
+    -fx-font-family: 'Agency FB';
+    -fx-font-weight: bold;
+}
+
+.label-h {
+    -fx-text-fill: #f4a261; /* Orange text */
+    -fx-font-family: 'Agency FB';
+    -fx-font-weight: bold;
+}
+
+.label-h1 {
+    -fx-font-size: 40px;
+}
+
+.label-h2 {
+    -fx-font-size: 30px;
+}
+
+.label-white {
+    -fx-font-size: 30px;
+    -fx-text-fill: #ffffff;
+}
+
+.list-label {
+    -fx-background-color: #f4a261; /* Orange text */
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 24px;
+    -fx-font-family: 'Agency FB';
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-background-radius: 10px;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #264653; /* Dark blue */
+    -fx-text-fill: #f4a261; /* Orange text */
+    -fx-padding: 10px 20px;
+    -fx-border-color: #f4a261;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+}
+.button:hover {
+    -fx-background-color: #2a9d8f; /* Slightly lighter blue */
+}
+.button:pressed {
+    -fx-background-color: #1b1f29; /* Darker shade */
+    -fx-text-fill: #ffffff;
+}
+
+.button-list {
+    -fx-background-color: #264653; /* Dark blue */
+    -fx-border-color: #f4a261;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 20px;
+}
+
+.button-list:hover {
+    -fx-background-color: #2a9d8f; /* Slightly lighter blue */
+}
+.button-list:pressed {
+    -fx-background-color: #1b1f29; /* Darker shade */
+    -fx-text-fill: #ffffff;
+}
+
+/* TextFields and PasswordFields */
+.text-field, .password-field {
+    -fx-background-color: #1b1f29; /* Dark blue */
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #f4a261;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+}
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #2a9d8f; /* Highlight */
+}
+
+/* TableView */
+.table-view {
+    -fx-background-color: #1b1f29; /* Dark blue */
+    -fx-border-color: #f4a261;
+    -fx-border-width: 1px;
+    -fx-font-size: 18px;
+}
+.table-view .column-header {
+    -fx-background-color: #264653; /* Header background */
+    -fx-text-fill: #f4a261;
+    -fx-font-weight: bold;
+}
+.table-view .cell {
+    -fx-background-color: #1b1f29; /* Cell background */
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 18px;
+}
+.table-view .cell:selected {
+    -fx-background-color: #2a9d8f; /* Selected background */
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 18px;
+}
+
+/* ComboBox */
+.combo-box {
+    -fx-background-color: #1b1f29; /* Dark blue */
+    -fx-text-fill: #ffffff;
+}
+.combo-box .list-cell {
+    -fx-background-color: #1b1f29; /* Drop-down background */
+    -fx-text-fill: #ffffff;
+}
+.combo-box .list-cell:hover {
+    -fx-background-color: #2a9d8f; /* Hover */
+}
+
+/* CheckBox */
+.check-box {
+    -fx-background-color: #f4a261;
+    -fx-font-size: 18px;
+    -fx-font-family: 'Agency FB';
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+.check-box:selected {
+    -fx-mark-color: #2a9d8f; /* Checked color */
+}
+
+/* RadioButton */
+.radio-button {
+    -fx-text-fill: #f4a261;
+}
+.radio-button:selected {
+    -fx-mark-color: #2a9d8f;
+}
+
+/* ProgressBar */
+.progress-bar {
+    -fx-accent: #f4a261; /* Progress color */
+    -fx-background-color: #264653; /* Background */
+}
+
+/* ScrollBar */
+.scroll-bar {
+    -fx-background-color: #1b1f29;
+}
+.scroll-bar .thumb {
+    -fx-background-color: #2a9d8f;
+}
+
+/* ListView */
+.list-view {
+    -fx-background-color: #1b1f29; /* Dark blue */
+    -fx-text-fill: #ffffff;
+}
+.list-view .list-cell {
+    -fx-background-color: #1b1f29;
+    -fx-text-fill: #ffffff;
+}
+.list-view .list-cell:hover {
+    -fx-background-color: #2a9d8f;
+}
+.list-view .list-cell:selected {
+    -fx-background-color: #2a9d8f;
+    -fx-text-fill: #ffffff;
+}
+
+/* MenuBar */
+.menu-bar {
+    -fx-background-color: #264653; /* Dark blue */
+}
+.menu {
+    -fx-text-fill: #f4a261;
+}
+.menu:hover {
+    -fx-background-color: #2a9d8f;
+}
+.menu-item {
+    -fx-text-fill: #ffffff;
+}
+.menu-item:hover {
+    -fx-background-color: #2a9d8f;
+}
+
+/* Tooltips */
+.tooltip {
+    -fx-background-color: #264653;
+    -fx-text-fill: #f4a261;
+    -fx-border-color: #f4a261;
+    -fx-border-width: 1px;
+}
+
+/* Tabs */
+.tab {
+    -fx-background-color: #264653;
+    -fx-text-fill: #f4a261;
+}
+.tab:selected {
+    -fx-background-color: #2a9d8f;
+}
+.tab-pane {
+    -fx-background-color: #1b1f29;
+}
